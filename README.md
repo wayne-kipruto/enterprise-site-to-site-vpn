@@ -5,7 +5,7 @@ This project demonstrates the design and deployment of a secure **Wide Area Netw
 
 By leveraging **IPsec Tunneling**, this solution ensures that sensitive internal traffic—such as Active Directory replication and file sharing—remains confidential and integrity-protected while traversing untrusted networks. This implementation simulates a real-world enterprise environment using **Cisco IOS**.
 
-![Network Topology](topology.png)
+![Network Topology](vpn-secure-topology.png)
 
 ---
 

@@ -85,4 +85,4 @@ Issue: Pings were failing despite correct routing.
 Root Cause: The crypto map was applied to the LAN interface (Gi0/0) instead of the WAN interface (Gi0/1).
 Resolution: Removed the map from the LAN and applied it to the ISP-facing interface.
 
-Project Architect: Wayne Kipruto | Network Engineer
+## Project Architect: Wayne Kipruto | Network Engineer

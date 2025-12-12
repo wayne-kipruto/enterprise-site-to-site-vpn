@@ -65,6 +65,7 @@ crypto map CMAP 10 ipsec-isakmp
 ```
 ### 3. End-to-End Connectivity
 Ping tests confirmed successful communication between Nairobi-PC (192.168.10.10) and Mombasa-PC (192.168.20.10) via the encrypted tunnel.
+![Ping Tests](success-pings.png)
 
 ### 4. Encryption Verification
 The following output confirms that packets are being encapsulated (encrypted) before leaving the WAN interface.

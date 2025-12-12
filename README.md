@@ -69,12 +69,16 @@ Ping tests confirmed successful communication between Nairobi-PC (192.168.10.10)
 
 ### 4. Encryption Verification
 The following output confirms that packets are being encapsulated (encrypted) before leaving the WAN interface.
-``` show crypto ipsec sa```
+``` 
+show crypto ipsec sa
+```
 ![Secure VPN Encryption ](vpn-encryption.png)
+
 (Non-zero encapsulation values confirm the tunnel is actively securing data).
 
 ## Troubleshooting Log
 During deployment, the following engineering challenges were resolved:
+
 ### 1. "MM_NO_STATE" Error:
 Issue: The tunnel failed to initiate.
 Root Cause: Mismatch in the set peer IP address configuration.
@@ -85,4 +89,5 @@ Issue: Pings were failing despite correct routing.
 Root Cause: The crypto map was applied to the LAN interface (Gi0/0) instead of the WAN interface (Gi0/1).
 Resolution: Removed the map from the LAN and applied it to the ISP-facing interface.
 
-## Project Architect: Wayne Kipruto | Network Engineer
+---
+Project Architect: Wayne Kipruto | Network Engineer
